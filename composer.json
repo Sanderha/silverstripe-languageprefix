@@ -13,9 +13,9 @@
 	],
 	"require":
 	{
-		"silverstripe/framework": "~3.*",
-		"silverstripe/cms": "~3.*",
-		"silverstripe/translatable": " ~2.*"
+		"silverstripe/framework": "3.*",
+		"silverstripe/cms": "3.*",
+		"silverstripe/translatable": " 2.*"
 	},
 	"support": 
 	{
