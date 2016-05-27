@@ -189,7 +189,7 @@ class PrefixModelAsController extends ModelAsController {
 	protected function showPageNotFound() {
 
 		if ($response = ErrorPage::response_for(404)) {			
-			return $response;
+			//return $response;
 		}
 		// if an errorpage is not defined for the current language
 		// use the default language
@@ -197,9 +197,9 @@ class PrefixModelAsController extends ModelAsController {
 		Translatable::set_current_locale($locale);
 
 		if ($response = ErrorPage::response_for(404)) {
-			return $response;
+			//return $response;
 		}
-		//return $this->httpError(404, 'The requested page could not be found!!');
+		return $this->httpError(404, 'The requested page could not be found!');
 	}	
 	
 	/**
